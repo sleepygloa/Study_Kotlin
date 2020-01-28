@@ -11,7 +11,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //우리가 만든 예제들을 이곳에서 실행 시킨다.
-        doTest(FirstTest(::WriteLn));
+        //doTest(FirstTest(::WriteLn));
+        //doTest(NumberTest(::WriteLn))
+        //doTest(StringTest(::WriteLn))
+
+        //doTest(FunctionTest(::WriteLn))
+        //doTest(ConditionTest(::WriteLn))
+        //doTest(CollectionTest(::WriteLn))
+        doTest(LabelTest(::WriteLn))
+        //doTest(ExceptionTest(::WriteLn))
+        //doTest(ClassTest(::WriteLn))
     }
 
     private fun doTest(o : TestClass){
