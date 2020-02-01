@@ -7,9 +7,7 @@ import com.example.study_kotlin.step2.DataClassTest
 import com.example.study_kotlin.step2.InterfaceAbstractTest
 import com.example.study_kotlin.step2.ObjectTest
 import com.example.study_kotlin.step2.PolyMorphTest
-import com.example.study_kotlin.step3.CloserTest
-import com.example.study_kotlin.step3.ExtTest
-import com.example.study_kotlin.step3.LamdaTest
+import com.example.study_kotlin.step3.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -35,7 +33,11 @@ class MainActivity : AppCompatActivity() {
         //doTest(ObjectTest(::WriteLn))
         //doTest(LamdaTest(::WriteLn))
         //doTest(ExtTest(::WriteLn))
-        doTest(CloserTest(::WriteLn))
+        //doTest(CloserTest(::WriteLn))
+        //doTest(Ext2Test(::WriteLn))
+        //doTest(DSLTest(::WriteLn))
+        //doTest(CurryngTest(::WriteLn))
+        doTest(InfixTest(::WriteLn))
     }
 
     private fun doTest(o : TestClass){
