@@ -2,6 +2,12 @@ package com.example.study_kotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.study_kotlin.step1.LabelTest
+import com.example.study_kotlin.step2.DataClassTest
+import com.example.study_kotlin.step2.InterfaceAbstractTest
+import com.example.study_kotlin.step2.ObjectTest
+import com.example.study_kotlin.step2.PolyMorphTest
+import com.example.study_kotlin.step3.LamdaTest
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,9 +24,14 @@ class MainActivity : AppCompatActivity() {
         //doTest(FunctionTest(::WriteLn))
         //doTest(ConditionTest(::WriteLn))
         //doTest(CollectionTest(::WriteLn))
-        doTest(LabelTest(::WriteLn))
+        //doTest(LabelTest(::WriteLn))
         //doTest(ExceptionTest(::WriteLn))
         //doTest(ClassTest(::WriteLn))
+        //doTest(PolyMorphTest(::WriteLn))
+        //doTest(InterfaceAbstractTest(::WriteLn))
+        //doTest(DataClassTest(::WriteLn))
+        //doTest(ObjectTest(::WriteLn))
+        doTest(LamdaTest(::WriteLn))
     }
 
     private fun doTest(o : TestClass){

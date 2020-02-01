@@ -1,5 +1,6 @@
-package com.example.study_kotlin
+package com.example.study_kotlin.step1
 
+import com.example.study_kotlin.TestClass
 import java.util.*
 
 class StringTest( p : (Any) -> Unit) : TestClass(p){

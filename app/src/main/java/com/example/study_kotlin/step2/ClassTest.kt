@@ -1,4 +1,6 @@
-package com.example.study_kotlin
+package com.example.study_kotlin.step2
+
+import com.example.study_kotlin.TestClass
 
 class ClassTest (p : (Any) -> Unit) : TestClass(p){
     override fun doTest() {
@@ -7,7 +9,7 @@ class ClassTest (p : (Any) -> Unit) : TestClass(p){
         Test1("PSW", 50).showInfo()
 
         Test2("나다").showInfo()
-        Test2("PSW",50).showInfo()
+        Test2("PSW", 50).showInfo()
 
         ChildClass("HI").sayHello()
     }

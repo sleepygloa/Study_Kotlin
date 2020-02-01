@@ -1,4 +1,6 @@
-package com.example.study_kotlin
+package com.example.study_kotlin.step1
+
+import com.example.study_kotlin.TestClass
 
 class FunctionTest( p : (Any) -> Unit) : TestClass(p){
     override fun doTest(){
@@ -10,14 +12,14 @@ class FunctionTest( p : (Any) -> Unit) : TestClass(p){
         funVar ("Function Variable 1")
         println( funcVarType("Function Variable 2"))
 
-        HigherFunc({println("Higher Function")})
+        HigherFunc({ println("Higher Function") })
         HigherFunc(::funcVarType)
     }
     fun funByReturn( s: String) : Any?{
         return s
     }
     fun funByParameter ( i : Int, s : String){
-        println (i.toString() + s)
+        println(i.toString() + s)
     }
     fun funByInline(i : Int, i1 : Int) = i * i1
     fun funByNoParam(){
@@ -26,6 +28,6 @@ class FunctionTest( p : (Any) -> Unit) : TestClass(p){
     fun HigherFunc( f : () -> Any? ){
         f()
     }
-    var funVar = { s: String -> println (s) }
+    var funVar = { s: String -> println(s) }
     var funcVarType : (String) -> Any? = ::funByReturn
 }

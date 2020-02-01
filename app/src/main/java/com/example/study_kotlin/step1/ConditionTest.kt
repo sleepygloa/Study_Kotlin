@@ -1,4 +1,6 @@
-package com.example.study_kotlin
+package com.example.study_kotlin.step1
+
+import com.example.study_kotlin.TestClass
 
 class ConditionTest (p: (Any) -> Unit) : TestClass(p){
     override fun doTest() {
@@ -12,24 +14,33 @@ class ConditionTest (p: (Any) -> Unit) : TestClass(p){
             else      -> {false}
         }
         println(result)
-        println(if("AAA".length > 3) true else "짧아요")
+        println(if ("AAA".length > 3) true else "짧아요")
     }
     fun loopTest(count : Int){
         for( i in 0.. count){
-            println("i ->" +i)
+            println("i ->" + i)
         }
         //(0..count).forEach{println ("$it ->" +it}
 
         var i : Int = 0
-        while (i < count) { i++; println("$i 입니다.")}
+        while (i < count) { i++; println("$i 입니다.")
+        }
     }
 
     fun caseTest(o : Any?){
         when (o){
-            "Test"      -> {println("문자:"+o)}
-            is Float    -> {println("Float:"+o)}
-            in (0..9)   -> {println("0부터 9까지 숫자:$o")}
-            else        -> {println("???")}
+            "Test"      -> {
+                println("문자:" + o)
+            }
+            is Float    -> {
+                println("Float:" + o)
+            }
+            in (0..9)   -> {
+                println("0부터 9까지 숫자:$o")
+            }
+            else        -> {
+                println("???")
+            }
         }
     }
 
